@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Palabras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>4 letras</h1>
+        <p>Adivina la palabra de 4 letras en 6 intentos.</p>
+        <!-- Elemento donde se mostrará la pista -->
+        <p id="pista"></p>
+        <div id="grid"></div>
+        <input type="text" id="inputWord" maxlength="4" placeholder="Escribe una palabra" autocomplete="off">
+        <button onclick="verificarPalabra()">Intentar</button>
+        <button id="resetbutton" onclick="reiniciar_juego()" style="display: none;">Jugar de nuevo</button>
+        <p id="mensaje"></p>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>
